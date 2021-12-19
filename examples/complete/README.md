@@ -1,3 +1,4 @@
+```
 module "my_irsa" {
   source = "../../"
 
@@ -18,3 +19,5 @@ module "my_irsa" {
     "arn:aws:iam::aws:policy/job-function/DatabaseAdministrator"
   ]
 }
+
+```

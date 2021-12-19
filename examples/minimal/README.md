@@ -1,3 +1,4 @@
+```
 module "my_irsa" {
   source = "../../"
 
@@ -7,3 +8,5 @@ module "my_irsa" {
   name      = "my-service-account"
   namespace = "my-cool-k8s-app"
 }
+
+```
