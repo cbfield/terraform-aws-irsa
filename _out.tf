@@ -57,9 +57,15 @@ output "permissions_boundary" {
   description = "The value provided in var.permissions_boundary"
   value       = var.permissions_boundary
 }
+
 output "policy_attachments" {
   description = "The value provided in var.policy_attachments"
   value       = var.policy_attachments
+}
+
+output "role" {
+  description = "The IAM role created by this module"
+  value       = aws_iam_role.role
 }
 
 output "tags" {
