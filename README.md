@@ -2,21 +2,18 @@
 
 A Terraform module that creates an AWS IAM Role for a Kubernetes service account
 
-# Terraform Docs
-
+<!-- BEGIN_TF_DOCS -->
 ## Requirements
 
-No requirements.
+| Name | Version |
+|------|---------|
+| <a name="requirement_aws"></a> [aws](#requirement\_aws) | ~>3.6 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | n/a |
-
-## Modules
-
-No modules.
+| <a name="provider_aws"></a> [aws](#provider\_aws) | ~>3.6 |
 
 ## Resources
 
@@ -61,4 +58,6 @@ No modules.
 | <a name="output_namespace"></a> [namespace](#output\_namespace) | The value provided in var.namespace |
 | <a name="output_permissions_boundary"></a> [permissions\_boundary](#output\_permissions\_boundary) | The value provided in var.permissions\_boundary |
 | <a name="output_policy_attachments"></a> [policy\_attachments](#output\_policy\_attachments) | The value provided in var.policy\_attachments |
+| <a name="output_role"></a> [role](#output\_role) | The IAM role created by this module |
 | <a name="output_tags"></a> [tags](#output\_tags) | The value provided in var.tags |
+<!-- END_TF_DOCS -->
