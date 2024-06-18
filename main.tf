@@ -6,7 +6,7 @@ resource "aws_iam_role" "role" {
   name                  = var.iam_prefix != null ? join("-", [var.iam_prefix, var.name]) : var.name
   path                  = var.iam_path
   permissions_boundary  = var.permissions_boundary
-  tags = var.tags
+  tags                  = var.tags
 
   assume_role_policy = templatefile("${path.module}/templates/trust-policy.json.tpl", {
     idp_arn   = var.idp_arn
